@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
 
 		<title>Is Today A Trading Holiday?</title>
 
 		<meta name="author" content="AlgoTest" />
-		<meta name="description" content="Find out if today is a trading holiday or not?" />
+		<meta
+			name="description"
+			content="Find out if today is a trading holiday or not?"
+		/>
 		<meta name="affiliation" content="AlgoTest | NSE | India" />
-		<meta name="keywords" content="Building AlgoTest Co-founder" />
+		<meta name="keywords" content="IS TODAY A MARKET HOLIDAY OR NOT" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#000000" />
-
 		<link rel="manifest" href="manifest.json" />
 		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-		<link rel="icon" type="image/x-icon" sizes="48x48" href="icons/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" />
-		<link rel="icon" type="image/png" href="icons/android-chrome-512x512.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="48x48"
+			href="icons/logo300.png"
+		/>
+		<link rel="apple-touch-icon" sizes="180x180" href="icons/logo300.png" />
+		<link rel="icon" type="image/png" href="icons/logo300.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="icons/logo300.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="icons/logo300.png" />
 	</head>
 
 	<body>
-		<p>Hi</p>
+		<p id="result" />
+		<script>
+			const dates = [
+				"1/26/2023",
+				"3/7/2023",
+				"3/7/2023",
+				"3/30/2023",
+				"4/4/2023",
+				"4/7/2023",
+				"4/14/2023",
+				"5/1/2023",
+				"6/28/2023",
+				"8/15/2023",
+				"9/19/2023",
+				"10/2/2023",
+				"10/24/2023",
+				"11/14/2023",
+				"11/27/2023",
+				"12/25/2023",
+			];
+			const resultDiv = document.getElementById("result");
+			const today = new Date();
+			const todayString = today.toLocaleDateString();
+			if (dates.includes(todayString)) {
+				resultDiv.innerHTML = "YES";
+			} else {
+				resultDiv.innerHTML = "NO";
+			}
+		</script>
 	</body>
 </html>
