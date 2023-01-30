@@ -49,6 +49,11 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+#powered_by a {
+	color: #fff;
+	text-decoration: none;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
