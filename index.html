@@ -59,8 +59,9 @@
 			];
 			const resultDiv = document.getElementById("result");
 			const today = new Date();
+			const day = today.getDay();
 			const todayString = today.toLocaleDateString();
-			if (dates.includes(todayString)) {
+			if (dates.includes(todayString) || day === 0 || day === 6) {
 				resultDiv.innerHTML = "YES";
 			} else {
 				resultDiv.innerHTML = "NO";
