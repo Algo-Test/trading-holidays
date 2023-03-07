@@ -6,22 +6,14 @@
 		<title>Is Today A Stock Market Holiday In India?</title>
 
 		<meta name="author" content="AlgoTest" />
-		<meta
-			name="description"
-			content="Find out if the Indian Stock Market is closed today"
-		/>
+		<meta name="description" content="Find out if the Indian Stock Market is closed today" />
 		<meta name="affiliation" content="AlgoTest | NSE | India" />
 		<meta name="keywords" content="IS TODAY A MARKET HOLIDAY OR NOT" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#000000" />
 		<link rel="manifest" href="manifest.json" />
 		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-		<link
-			rel="icon"
-			type="image/x-icon"
-			sizes="48x48"
-			href="icons/logo300.png"
-		/>
+		<link rel="icon" type="image/x-icon" sizes="48x48" href="icons/logo300.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="icons/logo300.png" />
 		<link rel="icon" type="image/png" href="icons/logo300.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="icons/logo300.png" />
@@ -32,38 +24,32 @@
 		<div id="result-div">
 			<p id="result" />
 		</div>
-		<a
-			id="powered_by"
-			href="https://algotest.in"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
+		<a id="powered_by" href="https://algotest.in" target="_blank" rel="noopener noreferrer">
 			Powered By <strong>AlgoTest</strong>
 			<img src="icons/logo300.png" alt="AlgoTest Logo" height="30" />
 		</a>
 		<script>
 			const dates = [
-				"1/26/2023",
-				"3/7/2023",
-				"3/7/2023",
-				"3/30/2023",
-				"4/4/2023",
-				"4/7/2023",
-				"4/14/2023",
-				"5/1/2023",
-				"6/28/2023",
-				"8/15/2023",
-				"9/19/2023",
-				"10/2/2023",
-				"10/24/2023",
-				"11/14/2023",
-				"11/27/2023",
-				"12/25/2023",
+				"26/01/2023",
+				"07/03/2023",
+				"30/03/2023",
+				"04/04/2023",
+				"07/04/2023",
+				"14/04/2023",
+				"01/05/2023",
+				"28/06/2023",
+				"15/08/2023",
+				"19/09/2023",
+				"02/10/2023",
+				"24/10/2023",
+				"14/11/2023",
+				"27/11/2023",
+				"25/12/2023",
 			];
 			const resultDiv = document.getElementById("result");
 			const today = new Date();
 			const day = today.getDay();
-			const todayString = today.toLocaleDateString();
+			const todayString = today.toLocaleDateString("en-GB");
 			if (dates.includes(todayString) || day === 0 || day === 6) {
 				resultDiv.innerHTML = "YES";
 			} else {
