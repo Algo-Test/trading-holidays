@@ -1,73 +1,74 @@
 body {
-	overflow: hidden;
-	text-align: center;
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	color: #fff;
-	vertical-align: middle;
-	background: #3d72a7;
-	background: -moz-linear-gradient(-45deg, #3d72a7, #48a8b9);
-	background: -webkit-linear-gradient(-45deg, #3d72a7, #48a8b9);
-	background: linear-gradient(-45deg, #3d72a7, #48a8b9);
-	background-size: 400% 400%;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#47a06e", endColorstr="#3b7cb4", GradientType=1);
-	-webkit-animation: gradient 15s ease infinite;
-	-moz-animation: gradient 15s ease infinite;
-	animation: gradient 15s ease infinite;
+    overflow: hidden;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: #fff;
+    vertical-align: middle;
+    background: #3d72a7;
+    background: -moz-linear-gradient(-45deg, #3d72a7, #48a8b9);
+    background: -webkit-linear-gradient(-45deg, #3d72a7, #48a8b9);
+    background: linear-gradient(-45deg, #3d72a7, #48a8b9);
+    background-size: 400% 400%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#47a06e", endColorstr="#3b7cb4", GradientType=1);
+    -webkit-animation: gradient 15s ease infinite;
+    -moz-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    font-family: 'Inter', sans-serif;
 }
 
 #result-div {
-	position: relative;
-	width: 100%;
-	height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 #result {
-	font-size: 8rem;
-	font-weight: bold;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -80%);
-	background: rgba(0, 0, 0, 0.35);
-	backdrop-filter: blur(15px);
-	border-radius: 12px;
-	padding: 10rem 20rem;
+    font-size: 8rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 10rem 20rem;
 }
 
 #powered_by {
-	width: 100%;
-	position: absolute;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 23px;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, -80%);
-	gap: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
-	text-decoration: none;
+    width: 100%;
+    position: absolute;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-	#result {
-		font-size: 5rem;
-		padding: 5rem 5rem;
-	}
+    #result {
+        font-size: 5rem;
+        padding: 5rem 5rem;
+    }
 }
