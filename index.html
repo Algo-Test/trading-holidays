@@ -52,20 +52,7 @@
             <img src="icons/logo300.png" alt="AlgoTest Logo" height="30" />
         </a>
         <script>
-            // async function getHoliday() {
-            //     const response = await fetch(
-            //         '',
-            //         {
-            //             method: 'GET',
-            //             mode: 'cors',
-            //         }
-            //     );
-            //     console.log(response.json());
-            //     return response.json();
-
-            // }
-
-            fetch('https://algotest.xyz/api/pricefeed/is-trading-holiday').then(
+            fetch('https://algotest.in/api/pricefeed/is-trading-holiday').then(
                 (response) => {
                     const answer = response.json()?.answer;
                     const resultDiv = document.getElementById('result');
