@@ -54,13 +54,15 @@
         <script>
             fetch('https://algotest.in/api/pricefeed/is-trading-holiday').then(
                 (response) => {
-                    const answer = response.json()?.answer;
-                    const resultDiv = document.getElementById('result');
-                    if (answer) {
-                        resultDiv.innerHTML = 'YES';
-                    } else {
-                        resultDiv.innerHTML = 'NO';
-                    }
+                    response.json().then((data) => {
+                        const answer = data?.answer;
+                        const resultDiv = document.getElementById('result');
+                        if (answer) {
+                            resultDiv.innerHTML = 'YES';
+                        } else {
+                            resultDiv.innerHTML = 'NO';
+                        }
+                    });
                 }
             );
         </script>
