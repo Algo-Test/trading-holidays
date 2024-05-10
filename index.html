@@ -52,7 +52,7 @@
             <img src="icons/logo300.png" alt="AlgoTest Logo" height="30" />
         </a>
         <script>
-            fetch('https://algotest.in/api/pricefeed/is-trading-holiday').then(
+            fetch('https://prices.algotest.in/is-trading-holiday').then(
                 (response) => {
                     response.json().then((data) => {
                         const answer = data?.answer;
